@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 .banner {
-  width: 100%;
   height: 100vh;
   background-image: url(img/baner.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .navbar {
@@ -67,38 +71,228 @@
   font-size: 15px;
   color: #d0bcf5;
 }
-.about {
+#about {
   width: 100%;
   height: 500px;
   background-color: white;
   text-align: center;
 }
-.about h1 {
+#about h1 {
   padding: 35px 0;
   font-weight: bold;
   letter-spacing: 5px;
 }
-.about p {
+#about p {
   line-height: 75px;
   letter-spacing: 8px;
-  font-size: 40px;
-  font-weight: 22px;
+  font-size: 20px;
   color: #ca9c9c;
   padding-bottom: 20px;
 }
-.about p .skilltxt {
+#about p .skilltxt {
   color: black;
   padding: 35px 0;
   font-weight: bold;
   letter-spacing: 5px;
 }
-.skill {
+#skill {
   background-color: #474342;
-  padding: 75px 0;
-  height: 85;
+  padding: 75px 80px;
 }
-.tab-skill {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+.skill-bar {
+  width: 600px;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+  background-color: #ffff;
+}
+.skill-bar .bar .info {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.skill-bar .bar {
+  margin: 20px 0;
+}
+.skill-bar .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.skill-bar .bar .proges-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #d0bcf5;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 6s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.proges-line span {
+  left: 0px;
+  height: 100%;
+  width: 80%;
+  background: #a884ed;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 8s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.proges-line.corel span {
+  width: 90%;
+}
+.proges-line.photo span {
+  width: 65%;
+}
+.proges-line.fiqma span {
+  width: 60%;
+}
+.proges-line.premiere span {
+  width: 75%;
+}
+.proges-line.html span {
+  width: 30%;
+}
+.proges-line.mit span {
+  width: 45%;
+}
+.proges-line.bahasa-c span {
+  width: 25%;
+}
+.skill-bar .bar .proges-line span::before {
+  position: absolute;
+  content: ' ';
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+.skill-bar .bar .proges-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #474342;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.proges-line.corel span::after {
+  content: '90%';
+}
+.proges-line.photo span::after {
+  content: '65%';
+}
+.proges-line.fiqma span::after {
+  content: '60%';
+}
+.proges-line.premiere span::after {
+  content: '75%';
+}
+.proges-line.af-ef span::after {
+  content: '70%';
+}
+.proges-line.html span::after {
+  content: '30%';
+}
+.proges-line.mit span::after {
+  content: '45%';
+}
+.proges-line.bahasa-c span::after {
+  content: '25%';
+}
+#galery {
+  margin: 25px;
+}
+table {
+  margin: 0 auto;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+#footer {
+  background: #474342 !important;
+}
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li {
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff;
+}
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
 }
