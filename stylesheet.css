@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('http://fonts.cdnfonts.com/css/valorant');
+* {
+  font-family: Montserrat;
+}
+
+body {
+  background-color: #ece8e1;
+}
+/* Navbar */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar a .brand {
+  font-family: 'VALORANT', sans-serif;
+  text-decoration: none;
+  color: #ff4655;
+  letter-spacing: 4pt;
+  font-size: 19px;
+}
+
+.navbar a .brand:hover {
+  color: #ffff;
+  text-shadow: #ece8e1 2px 2px 5px;
+}
+.navbar a img:hover {
+  width: 55px;
+}
+
+/* line animation */
+.navbar ul li ::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ff4655;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  bottom: -2px;
+  transition: 0.5s;
+}
+.navbar ul li :hover:after {
+  width: 100%;
+}
+/* Navbar */
+
+/* Jumbotron banner */
+.banner {
+  background-image: url(asset/bg-banner.jpg);
+  background-size: cover;
+  height: 780px;
+  margin-top: -85px;
+}
+.banner .caption {
+  color: white;
+  text-align: center;
+  margin-top: 500px;
+}
+.banner .caption p {
+  font-size: 37px;
+}
+
+/* About */
+#about {
+  margin: 45px;
+}
+#about h1 {
+  font-family: 'VALORANT', sans-serif;
+  color: #0f1923;
+}
+#slider {
+  background-image: url(asset/bg-slider.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* Gallery */
+
+#gallery .container .gallery-caption {
+  padding: 40px;
+}
+#gallery .container h1 {
+  font-family: 'VALORANT', sans-serif;
+  color: #0f1923;
+  border-bottom: 1px solid white;
+}
+#gallery .container #card3a {
+  display: none;
+}
+/* button */
+#gallery .container button {
+  width: 250px;
+  margin-top: 75px;
+  display: table;
+  margin: 50px auto;
+  background-color: #ece8e1;
+  color: #ff4655;
+  font-weight: bold;
+}
+
+#gallery .container button:hover {
+  background-color: #0f1923;
+  box-shadow: #ece8e1 0px 0px 10px;
+}
+/* send email */
+.send-email {
+  padding: 25px;
+}
+.send-email h1 {
+  padding: 15px;
+  font-family: 'VALORANT', sans-serif;
+  color: #0f1923;
+  border-bottom: 1px solid #0f1923;
+}
+
+/* Footer */
+#footer {
+  background-color: #0f1923;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#footer h2 {
+  font-family: 'VALORANT', sans-serif;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  color: #ece8e1;
+}
+#footer ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 10px;
+  position: relative;
+  left: -11px;
+  margin: 20px 10px;
+  background-color: #1b2835;
+  border-radius: 13px;
+  height: 50px;
+}
+#footer ul li:hover {
+  background-color: #4e181c;
+}
+#footer ul li a img:hover {
+  width: 35px;
+}
+#footer p {
+  color: #918f8c;
+  font-size: 8px;
+  line-height: 0px;
+}
+
+/* Footer */
+
+/* Res for android */
+@media (min-width: 500px) and (max-width: 991.98px) {
+  .banner {
+    background-image: url(asset/bg-banner-andro.jpg);
+    background-size: cover;
+    height: 690px;
+  }
+  .banner .caption {
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+  }
+  .banner .caption p {
+    font-size: 15px;
+  }
+
+  #gallery .container .card-3 {
+    width: 210px;
+  }
+  #gallery .container .card-3 iframe {
+    width: auto;
+  }
+}

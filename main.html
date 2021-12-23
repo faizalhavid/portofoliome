@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="stylesheet.css" />
+
+
+  <!-- My font -->
+
+  <!-- Monserat -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <!-- Valorant -->
+  <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
+
+  <!-- Identitas title Web  --> 
+  <title>Faizal Portofolio</title>
+  <link rel="icon" href="asset/icon.png" />
+ 
+
+
+  <script>
+    // durasi slider
+    $(function () {
+      $('.carousel').carousel({
+        interval: 1000
+      });
+    });
+    //  button more
+    $(document).ready(function () {
+      $('.more').click(function () {
+        $('#card3a').show();
+        $('.more').hide();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- Js Boostrap -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="height:60px;">
+    <div class="container">
+      <a class="navbar-brand fw-border" href="main.html">
+        <img class="pe-2" src="asset/icon.svg" width="50px" alt="icon.png" />
+        <span class="brand">Faizal Portofolio </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#send">Send mail</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Jumbotron banner -->
+  <div class="jumbotron jumbotron-fluid banner" id="banner">
+    <div class="container caption">
+      <p>“Be who you are and say what you feel,
+        because those who mind don't matter,
+        and those who matter don't mind.”<br>
+        <span style="font-size: 20px;"> (Bernard M. Baruch)</span></p>
+    </div>
+
+  </div>
+  <!-- Jumbotron banner -->
+
+  <!-- Jumbotron about me -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-6 col-sm-1" style="color:#0f1923">
+          <h1 class="display-4">ABOUT ME</h1>
+          <p>Halo perkenalkan saya Mohamad Faizal Norhavid Mahasiswa Politeknik Elektronika Negeri Surabaya Jurusan
+            Teknik Infomatika Semester 1</p>
+          <p>Saya lahir pada tanggal 22 Juli 2002 di Ponorogo, domisili saya saat
+            di Ponorogo dan hobi saya bermain game, membuat desain dan editing video
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-1">
+          <!-- img slider -->
+          <div id="slider" class="carousel slide pb-1" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-fluid" src="asset/slider1.png" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="asset/slider2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="asset/slider3.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- img slider -->
+        </div>
+      </div>
+  </section>
+  <!-- Jumbotron about me -->
+
+  <!--Gallery  -->
+  <div id="gallery" style="padding-bottom:45px;background-color: #ff4655;">
+    <div class="container">
+      <div class="gallery-caption">
+        <h1 class="display-4 text-center">GALLERY</h1>
+      </div>
+      <!-- card 1-->
+      <div class="row row-cols-1 row-cols-md-2 g-4 card1">
+        <div class="col">
+          <div class="card">
+            <img src="asset/g1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">2st Best Point IoT</h5>
+              <p class="card-text">Tim MRB dengan karya Bibot dalam ajang Madrasah Robotic Competition 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">1st Android progamming</h5>
+              <p class="card-text">Dengan karya manzapo Apps dalam ajang lomba PROCOMMIT ITS 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">1st Documeter Film</h5>
+              <p class="card-text">Judul film "karena satya dan dharma" pada perlombaan di kwartir daerah jawa timur
+                2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Favorite ideas</h5>
+              <p class="card-text">Dengan karya alat pembasmi hama wereng dalam ajang perlombaan PESC UM 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 1-->
+
+      <br>
+
+      <!-- card 2-->
+      <div class="row row-cols-1 row-cols-md-2 g-4 card2">
+        <div class="col">
+          <div class="card">
+            <img src="asset/g5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Exemplary scout</h5>
+              <p class="card-text">Dalam kegiatan Penerimaan Tamu Ambalan 2018 Pangkalan MAN 1 Ponorogo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Triangle training</h5>
+              <p class="card-text">Dalam kegiatan Diklat Segitiga 2019 Saka Wirakartika Kodim 0802 Ponorogo </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g7.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Journalist committee</h5>
+              <p class="card-text">Dalam kegiatan Hari Amal Bhakti Kementrian agama Ponorogo 2019</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="asset/g8.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">1st stand</h5>
+              <p class="card-text"> Dengan produk minuman herbal dalam kegiatan kemah hijau BPBN Ponorogo 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 2-->
+
+      <br>
+
+      <!-- card 3 -->
+      <div id="card3a">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card card-3">
+              <!-- Video -->
+              <iframe src="https://www.youtube.com/embed/bZs061cpNuo?controls=0&showinfo=0" title="YouTube video player"
+                width="253px" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Documentary Movie</h5>
+                <p class="card-text">Film ini mengangkat Cerita tentang seorang pramuka yang mengimplementasikan kode
+                  kehormatan pramuka di masa covid-19. Saya sebagai Sutradara dan Editor Film</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-3">
+              <iframe src="https://www.youtube.com/embed/43m90r2VLls?controls=0" title="YouTube video player"
+                width="253px" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Creative Video</h5>
+                <p class="card-text">Video ini mengangkat tentang misi bupati ponorogo, yaitu "Ponorogo Berbenah Menuju
+                  Ponorogo yang Lebih Maju, Berbudaya dan Religius".<br>Saya sebagai Editor</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-3">
+              <iframe src="https://www.youtube.com/embed/UrQ2-Z0U17Y?controls=0" title="YouTube video player"
+                width="253" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Gopel Project</h5>
+                <p class="card-text">Gopel project merupakan project dalam kegiatan Lomba Akademik Madrasah Digital yang
+                  bekerja sama dengan XL Axiata. <br> <br> Saya sebagai IT Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-3">
+              <iframe src="https://www.youtube.com/embed/gEXMcboTSc0?controls=0" title="YouTube video player"
+                width="253px" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">Motion Grapich PPDB</h5>
+                <p class="card-text"> Motion Grapich ini merupakan sponsor dan penjelasan alur PPDB Sekolahan yang
+                  dikemas dalam animasi interaktif <br>Saya sebagai Sutradara dan Animator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <button type="button" class="btn more">More</button>
+    </div>
+
+  </div>
+  <!-- Gallery -->
+
+
+
+  <!-- send email -->
+  <div class="container send-email" id="send">
+    <form action="https://formspree.io/f/xbjwjnvl" method="POST">
+      <h1 class="display-4 text-center">Send Email</h1>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address :</label>
+        <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="komentar" class="form-label">Message :</label>
+        <textarea class="form-control" id="komentar" placeholder="masukan pesan ..." rows="8"></textarea>
+      </div>
+      <button type="submit" class="btn" style="color: #ffff;background-color: #ff4655;">Send</button>
+    </form>
+
+  </div>
+
+  <!-- send email -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <img src="asset/icon.svg" alt="" width="120px">
+      </div>
+      <h2>Faizal Portofolio</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/faizal_havid/"><img src="asset/ig.png" alt="ig" width="30px"
+              style="left:490px;"></a></li>
+        <li><a href="mailto:nurhavid123@gmail.com"><img src="asset/mail.png" alt="ig" width="30px"
+              style="left:490px;"></a></li>
+        <li><a href="https://wa.me/6283851942227"><img src="asset/wa.png" alt="ig" width="30px" style="left:490px;"></a>
+        </li>
+      </ul>
+      <p>terima kasih telah berkunjung di website saya, salam kenal semua</p>
+      <p>@2021 Mohamad faizal norhavid</p>
+    </div>
+  </section>
+  <!-- Footer -->
+
+</body>
+
+</html>

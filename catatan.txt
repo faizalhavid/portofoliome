@@ -1,0 +1,3 @@
+sebelumnya Mohon maaf pak, website saya bisa dijalankan menggunkan live server,
+jika dibuka local host maka akan lambat, eror dan layout web akan berubah
+terima kasih pak 
